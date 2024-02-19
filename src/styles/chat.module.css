@@ -1,0 +1,14 @@
+.inputWrapper::after {
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  content: '';
+  position: absolute;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: calc(64px + 1rem);
+  -webkit-mask: linear-gradient(#25293c, #25293c 18%, transparent 100%);
+  mask: linear-gradient(#25293c, #25293c 18%, transparent 100%);
+  background: linear-gradient(180deg, rgba(37, 41, 60, 0.7) 44%, rgba(37, 41, 60, 0.43) 73%, rgba(37, 41, 60, 0));
+}
