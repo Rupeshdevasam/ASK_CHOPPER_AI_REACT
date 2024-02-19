@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react'
-import { useLoader, useFrame } from '@react-three/fiber'
+import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const GltfModel = ({ modelPath, scale = 40, position = [0, 0, 0] }: any) => {
   const ref = useRef()
-  const gltf = useLoader(GLTFLoader, modelPath)
+  const gltf: any = useLoader(GLTFLoader, modelPath)
   const [hovered, hover] = useState(false)
 
   // Subscribe this component to the render-loop, rotate the mesh every frame
@@ -17,8 +17,8 @@ const GltfModel = ({ modelPath, scale = 40, position = [0, 0, 0] }: any) => {
         object={gltf.scene}
         position={position}
         scale={hovered ? scale * 1.2 : scale}
-        onPointerOver={event => hover(true)}
-        onPointerOut={event => hover(false)}
+        onPointerOver={() => hover(true)}
+        onPointerOut={() => hover(false)}
       />
     </>
   )

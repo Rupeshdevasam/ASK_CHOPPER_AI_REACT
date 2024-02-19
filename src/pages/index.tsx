@@ -13,6 +13,7 @@ import { useAuth } from 'src/hooks/useAuth'
 /**
  *  Set Home URL based on User Roles
  */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getHomeRoute = (role: string) => {
   return '/chat'
 }

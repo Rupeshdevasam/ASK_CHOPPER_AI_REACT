@@ -6,7 +6,7 @@ const Repeater = (props: RepeaterProps) => {
   const { count, tag, children } = props
 
   // ** Custom Tag
-  const Tag = tag || 'div'
+  const Tag: any = tag || 'div'
 
   // ** Default Items
   const items = []

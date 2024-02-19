@@ -1,8 +1,6 @@
-import Styles from 'src/styles/message.module.css'
-import themeConfig from 'src/configs/themeConfig'
-import UseBgColor from 'src/@core/hooks/useBgColor'
+import Styles from '../styles/message.module.css'
 
-import { styled, useTheme } from '@mui/material/styles'
+import { useTheme } from '@mui/material/styles'
 import { useAuth } from 'src/hooks/useAuth'
 import { Avatar, AvatarGroup, Tooltip } from '@mui/material'
 import { useEffect, useState } from 'react'

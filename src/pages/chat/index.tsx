@@ -1,5 +1,5 @@
 import { Avatar, AvatarGroup, Button, TextField, Tooltip } from '@mui/material'
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import Icon from 'src/@core/components/icon'
 import Message from 'src/components/Message'
 import { Errors } from 'src/constants'
