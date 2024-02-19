@@ -1,0 +1,11 @@
+.nav-logo {
+  border-radius: 50%;
+  cursor: grabbing;
+}
+
+.title {
+  cursor: pointer;
+}
+.title > *:hover {
+  font-size: 1.7rem;
+}
