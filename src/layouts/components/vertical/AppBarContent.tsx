@@ -1,7 +1,7 @@
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 // ** Icon Imports
 import Icon from 'src/@core/components/icon'
@@ -26,10 +26,13 @@ const AppBarContent = (props: Props) => {
   // ** Props
   const { hidden, settings, saveSettings, toggleNavVisibility } = props
 
-  const audio = new Audio('/sounds/dog_bark.mp3')
+  const [audio, setAudio] = useState(new Audio('/sounds/dog_bark.mp3'))
 
   const [imageHovered, setImageHovered] = useState(false)
 
+  useEffect(() => {
+    setAudio(new Audio('/sounds/dog_bark.mp3'))
+  }, [])
   const playBarkSound = () => {
     if (audio.duration > 0 && !audio.paused) {
       //Its playing...do your job

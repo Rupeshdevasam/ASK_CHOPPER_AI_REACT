@@ -60,7 +60,7 @@ const Chat = () => {
       <div
         className={`tw-flex tw-w-full tw-fixed tw-m-[20px] tw-max-w-[1440px] tw-bottom-[0px] tw-z-2 tw-items-center tw-gap-[10px] ${Styles.inputWrapper}`}
       >
-        <AvatarGroup className='pull-up' max={1}>
+        <AvatarGroup className='pull-up' max={2}>
           <Tooltip title='Rupesh Devasam'>
             <Avatar alt='Rupesh Devasam' sx={{ width: 50, height: 50 }} src='/images/avatars/1.png' />
           </Tooltip>
