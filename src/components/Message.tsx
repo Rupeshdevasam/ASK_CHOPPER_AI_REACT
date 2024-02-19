@@ -55,7 +55,7 @@ const Message = ({ isReceived = false, message = 'No data found!', error = false
   return (
     <div className={`tw-flex tw-max-w-[50%] tw-gap-[10px] ${!isReceived ? 'tw-self-end' : ''}`}>
       <div id='icon' className={`${isReceived ? 'tw-order-0' : 'tw-order-1'}`}>
-        <AvatarGroup className='pull-up' max={1}>
+        <AvatarGroup className='pull-up' max={2}>
           <Tooltip title={getShowName()}>
             <Avatar
               alt={getShowName()}
